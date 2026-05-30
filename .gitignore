@@ -14,3 +14,6 @@ mysql-conf/
 
 # 备份临时文件
 backups/*.tmp
+
+# Claude Code 本地会话（不纳入版本管理）
+.claude/
