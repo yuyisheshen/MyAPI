@@ -1,6 +1,6 @@
 # ============================================
-# New API - Windows 数据备份脚本
-# 备份内容: SQLite 数据库 + 日志 + 配置
+# MyAPI - Windows PowerShell 数据备份脚本
+# 备份内容: SQLite 数据库 + 日志 + 配置文件
 # ============================================
 
 $ErrorActionPreference = "Stop"
