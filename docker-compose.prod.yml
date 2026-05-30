@@ -1,5 +1,5 @@
 # ============================================
-# New API - 云端部署 (MySQL 模式)
+# MyAPI - 生产环境叠加配置 (MySQL + Redis)
 # 适用于 Linux 服务器生产环境
 # 用法: docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
 # ============================================
