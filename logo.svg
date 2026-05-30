@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <!-- 金属质感渐变：从深灰到银白，带一点蓝紫调 -->
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c2c33"/>
+      <stop offset="35%" stop-color="#555566"/>
+      <stop offset="65%" stop-color="#8b8b9a"/>
+      <stop offset="100%" stop-color="#c0c0cc"/>
+    </linearGradient>
+    <!-- 反方向渐变：增加层次感 -->
+    <linearGradient id="metalGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3a3a45"/>
+      <stop offset="45%" stop-color="#6e6e80"/>
+      <stop offset="100%" stop-color="#a8a8b8"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <!-- 中心圆：使用渐变 -->
+    <circle cx="64" cy="64" r="14" fill="url(#metalGrad)"/>
+    <!-- 上方花瓣 -->
+    <path d="M64 8 C54 8 46 16 46 26 C46 30 48 34 51 37 C57 32 65 28 74 27 C70 17 58 8 64 8Z" fill="url(#metalGrad)"/>
+    <!-- 右上花瓣 -->
+    <path d="M105 26 C100 18 92 13 83 14 C80 16 73 23 68 31 C78 34 89 34 97 29 C103 28 106 27 105 26Z" fill="url(#metalGrad2)"/>
+    <!-- 右下花瓣 -->
+    <path d="M118 64 C118 54 110 46 100 46 C96 46 92 48 89 51 C95 57 99 67 100 76 C110 72 118 72 118 64Z" fill="url(#metalGrad)"/>
+    <!-- 下方花瓣 -->
+    <path d="M105 102 C101 96 94 92 85 92 C83 91 73 92 67 95 C72 98 76 104 78 109 C88 115 98 113 105 102Z" fill="url(#metalGrad2)"/>
+    <!-- 左下花瓣 -->
+    <path d="M64 120 C69 120 74 116 77 111 C83 105 85 97 84 89 C78 89 71 91 66 96 C62 99 58 105 55 111 C56 118 61 120 64 120Z" fill="url(#metalGrad)"/>
+    <!-- 左上花瓣 -->
+    <path d="M23 102 C29 96 36 92 43 89 C44 85 43 76 39 69 C35 66 29 64 23 64 C18 66 12 71 10 77 C7 86 10 97 16 101 C18 102 21 102 23 102Z" fill="url(#metalGrad2)"/>
+  </g>
+</svg>

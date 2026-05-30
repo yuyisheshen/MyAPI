@@ -1,0 +1,32 @@
+# ============================================
+# New API - 本地部署 (SQLite 模式)
+# 适用于 Windows Docker Desktop / 本地测试
+# 零外部依赖，一个命令启动
+# ============================================
+
+services:
+  new-api:
+    image: calciumion/new-api:latest
+    container_name: new-api
+    restart: unless-stopped
+    ports:
+      - "${NEW_API_PORT:-3000}:3000"
+    environment:
+      - TZ=${TZ:-Asia/Shanghai}
+    volumes:
+      # 业务数据：SQLite 数据库、密钥、配置等都在这一个目录
+      - ./data:/data
+      # 日志目录
+      - ./logs:/logs
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/status"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+    networks:
+      - new-api-net
+
+networks:
+  new-api-net:
+    driver: bridge
