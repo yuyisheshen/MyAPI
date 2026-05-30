@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================
-# New API - 云端一键部署脚本 (Linux)
+# MyAPI - 云端 MySQL 模式一键部署脚本 (Linux)
 # 用法: chmod +x deploy-cloud.sh && ./deploy-cloud.sh
 # ============================================
 
